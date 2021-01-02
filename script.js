@@ -215,3 +215,12 @@ function checkAnswer(answer){
 
 // This button starts the quiz!
 startQuizButton.addEventListener("click",startQuiz);
+function add() {
+    var a, b, c;
+    a = Number(document.getElementById("first").value);
+    b = Number(document.getElementById("second").value);
+    c = a + b;
+    document.getElementById("answer").value = c;
+    return c;
+}
+module.exports = add;
